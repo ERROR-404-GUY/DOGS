@@ -1,0 +1,13 @@
+name = "dogs"
+main = "src/index.ts"
+compatibility_date = "2023-10-02"
+
+account_id = "2ce0ee6988455251f108d83b431fa081"
+workers_dev = true
+
+compatibility_flags = [ "nodejs_compat" ]
+
+[[r2_buckets]]
+binding = "DOG_BUCKET"
+bucket_name = "dogs"
+preview_bucket_name = "dogs"
