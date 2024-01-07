@@ -1,5 +1,5 @@
 <div class="prose" >
-<h1 class="m-20">Sign in to post pictures!</h1>
+
 
 <form class="w-96 mx-auto p-10 bg-gray-800 rounded-lg">
 	<label class="label">

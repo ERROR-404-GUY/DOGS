@@ -1,4 +1,5 @@
 <script lang="ts">
+  
   let modal: HTMLDialogElement;
   export function show() {
     modal.show();

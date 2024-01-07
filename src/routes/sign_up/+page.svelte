@@ -3,7 +3,7 @@
 </script>
 
 <div class="prose">
-	<div class="flex justify-center">
+	<div class="flex text-center">
 		<h1 class="h1 p-10">Sign up here!</h1>
 	</div>
 	<SignUpForm />

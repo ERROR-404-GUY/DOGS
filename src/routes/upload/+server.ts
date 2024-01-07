@@ -87,7 +87,7 @@ export const GET: RequestHandler = async ({ fetch }) => {
   if (res.ok) {
     const parser = new XMLParser();
     const doc: S3ListResponse = parser.parse(await res.text());
-    const images = doc.ListBucketResult.Contents.map((c) => c.Key);
+    const images = doc.ListBucketResult.Contents.map((c) => PUBLIC_MEDIA_URL_PREFIX + "/" + c.Key);
     return new Response(JSON.stringify(images));
   } else {
     return new Response(await res.text(), { status: res.status });

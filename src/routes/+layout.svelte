@@ -1,4 +1,5 @@
 <script lang="ts">
+	
 	import "tailwindcss/tailwind.css";
 	import LogOutModal from "$lib/log_out_modal.svelte";
 	let showModal: () => void;
