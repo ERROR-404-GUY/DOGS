@@ -5,7 +5,8 @@
     posted here, as long as it's a picture of a dog.
   </p>
 
-  <img src="sesame-side-eye.jpg" class="h-48 object-cover m-10" />
+  <img src="danni.jpg" class="h-48 object-cover m-10" />
+  <img src="sesame-side-eye.jpg"class="h-48 object-cover m-10"/>
 
-  <p class="m1-10">This is a picture of a dog!</p>
+  <p class="m1-10">These are pictures of dogs!</p>
 </div>

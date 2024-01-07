@@ -1,5 +1,5 @@
 <script>
-    import SignIn from '$lib/sign-in.svelte';
+    import SignIn from "$lib/sign-in.svelte";
 </script>
 
-<dogs/>
+<dogs />

@@ -1,5 +1,7 @@
 <script lang="ts">
-	import 'tailwindcss/tailwind.css';
+	import "tailwindcss/tailwind.css";
+	import LogOutModal from "$lib/log_out_modal.svelte";
+	let showModal: () => void;
 </script>
 
 <div class="navbar bg-base-100 bg-neutral text-neutral-content">
@@ -27,33 +29,48 @@
 				<li><a href="/pics" class="btn">pictures of dogs</a></li>
 				<li><a href="/post-pic" class="btn">post a pic</a></li>
 			</ul>
-			<a class="btn btn-ghost text-xl" href="/">DOGS!</a>
 		</div>
+		<a class="btn btn-ghost text-xl" href="/">DOGS!</a>
 	</div>
 	<div class="navbar-end">
-		<a class="btn btn-ghost btn-rounded ease-in-out duration-300 hover:scale-110" href="/">Home</a>
-		<a class="btn btn-ghost btn-rounded ease-in-out duration-300 hover:scale-110" href="/sign-in"
+		<a
+			class="btn btn-ghost btn-rounded ease-in-out duration-300 hover:scale-110"
+			href="/">Home</a
+		>
+		<a
+			class="btn btn-ghost btn-rounded ease-in-out duration-300 hover:scale-110"
+			href="/sign-in"
 			>Sign in
 		</a>
-		<a class="btn btn-ghost btn-rounded ease-in-out duration-300 hover:scale-110" href="/sign_up"
+		<a
+			class="btn btn-ghost btn-rounded ease-in-out duration-300 hover:scale-110"
+			href="/sign_up"
 			>Sign up
 		</a>
 		<div class="dropdown dropdown-end">
-			<div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-			  <div class="w-10 rounded-full">
-				<img alt="Tailwind CSS Navbar component"/>
-			  </div>
+			<div
+				tabindex="0"
+				role="button"
+				class="btn btn-ghost btn-circle avatar"
+			>
+				<div class="w-10 rounded-full">
+					<img alt="Tailwind CSS Navbar component" />
+				</div>
 			</div>
-			<ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-neutral rounded-box w-52">
-			  <li>
-				<a class="justify-between">
-				  Profile
-				</a>
-			  </li>
-			  <li><a>Settings</a></li>
-			  <li><a>Logout</a></li>
+			<ul
+				class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-neutral rounded-box w-52"
+			>
+				<li>
+					<a class="justify-between" href="/profile-page">
+						Profile
+					</a>
+				</li>
+				<li><a href="/settings-page">Settings</a></li>
+				<li><button on:click={showModal}>Logout</button></li>
 			</ul>
-		  </div>
+		</div>
 	</div>
 </div>
 <slot />
+<LogOutModal bind:show={showModal} />
+
