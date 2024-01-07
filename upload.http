@@ -1,0 +1,4 @@
+GET http://localhost:8000/upload
+
+###
+HEAD  http://localhost:8000/upload
