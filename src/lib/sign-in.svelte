@@ -3,8 +3,8 @@
 
 <form class="w-96 mx-auto p-10 bg-gray-800 rounded-lg">
 	<label class="label">
-		<span class="text-slate-50">Username:</span>
-		<input class="input" type="text" placeholder="Username" />
+		<span class="text-slate-50">Username or Email:</span>
+		<input class="input" type="text" placeholder="Username/email" />
 	</label>
 
 	<label class="label pt-5">

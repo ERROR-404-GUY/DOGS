@@ -4,7 +4,7 @@
 
 <div class="prose">
 	<div class="flex text-center">
-		<h1 class="h1 p-10">Sign up here!</h1>
+		<h1 class="h1 p-20">Sign up here!</h1>
 	</div>
 	<SignUpForm />
 </div>

@@ -57,7 +57,10 @@ export const POST: RequestHandler = async ({ request }) => {
         ext = i > 0 ? file.name.substring(i) : "";
     }
 
-    const filepath = `dogs/${uuid()}.${ext}`;
+    const date = new Date();
+    const timestamp = date.getTime();
+    const reversetime = 2_147_483_647_000 - timestamp
+    const filepath = `dogs/${reversetime}.${uuid()}.${ext}`;
     const body = Buffer.from(new Uint8Array(await file.arrayBuffer()));
     const req = await aws.sign(`${AWS_BUCKET_URL}/${filepath}`, {
       method: "PUT",
@@ -78,7 +81,7 @@ export const POST: RequestHandler = async ({ request }) => {
       });
     }
   }
-  return new Response(JSON.stringify(result));
+  return new Response(undefined,{status:302,headers:{location:"/show"}});
 };
 
 export const GET: RequestHandler = async ({ fetch }) => {

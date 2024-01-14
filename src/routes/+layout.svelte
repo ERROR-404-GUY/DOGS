@@ -25,13 +25,13 @@
 			</div>
 			<ul
 				tabindex="0"
-				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-52"
+				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-secondary rounded-box w-52"
 			>
-				<li><a href="/pics" class="btn">pictures of dogs</a></li>
-				<li><a href="/post-pic" class="btn">post a pic</a></li>
+				<li><a href="/show" class="text-black">pictures of dogs</a></li>
+				<li><a href="/post-pic" class="text-black">post a pic</a></li>
 			</ul>
 		</div>
-		<a class="btn btn-ghost text-xl" href="/">DOGS!</a>
+		<a class="btn btn-ghost text-xl btn-rounded ease-in-out duration-300 hover:scale-110" href="/">DOGS!</a>
 	</div>
 	<div class="navbar-end">
 		<a
@@ -59,15 +59,15 @@
 				</div>
 			</div>
 			<ul
-				class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-neutral rounded-box w-52"
+				class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-secondary rounded-box w-52"
 			>
 				<li>
-					<a class="justify-between" href="/profile-page">
+					<a class="justify-between text-black" href="/profile-page">
 						Profile
 					</a>
 				</li>
-				<li><a href="/settings-page">Settings</a></li>
-				<li><button on:click={showModal}>Logout</button></li>
+				<li><a href="/settings-page" class="text-black">Settings</a></li>
+				<li><button on:click={showModal} class="text-black">Logout</button></li>
 			</ul>
 		</div>
 	</div>
