@@ -3,8 +3,8 @@
 </script>
 
 <div class="prose">
-	<div class="flex text-center">
-		<h1 class="m-20">Sign in to post pictures!</h1>
+	<div class=" flex justify-center">
+		<h1 class="m-20 text-5xl">Sign in to post pictures!</h1>
 	</div>
 	<SignIn />
 </div>

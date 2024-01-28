@@ -1,13 +1,46 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{html,svelte,js,ts}'],
+const daisyui = require('daisyui')
+
+/** @type {import('tailwindcss').Config}*/
+const config = {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+
   daisyui: {
-    themes: ["fantasy", "night", "cyberpunk", "aqua"],
+    themes: ['light', 'dark', 'cupcake', 'acid',
+      'aqua',
+      'autumn',
+      'black',
+      'bumblebee',
+      'business',
+      'cmyk',
+      'coffee',
+      'corporate',
+      'cupcake',
+      'cyberpunk',
+      'dark',
+      'dracula',
+      'emerald',
+      'fantasy',
+      'forest',
+      'garden',
+      'halloween',
+      'lemonade',
+      'light',
+      'lofi',
+      'luxury',
+      'night',
+      'pastel',
+      'retro',
+      'synthwave',
+      'valentine',
+      'winter',
+      'wireframe',],
   },
 
+  plugins: [daisyui],
 }
 
+module.exports = config

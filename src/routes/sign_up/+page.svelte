@@ -3,8 +3,8 @@
 </script>
 
 <div class="prose">
-	<div class="flex text-center">
-		<h1 class="h1 p-20">Sign up here!</h1>
+	<div class="flex justify-center">
+		<b class="text-7xl p-20">Sign up here!</b>
 	</div>
 	<SignUpForm />
 </div>
