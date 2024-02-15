@@ -1,6 +1,7 @@
 <script lang="ts">
     import { themes } from "$lib/index.js";
     import { onMount } from "svelte";
+
     let current_theme = "";
 
     onMount(() => {
@@ -26,10 +27,17 @@
     }
 </script>
 
+
+
+
+
 <div class="prose flex justify-center">
     <h1 class="text-5xl">Settings</h1>
 </div>
-<div class="m-8 px-96 flex justify-center">
+<div class="flex justify-center">
+<p class="text-2xl pt-10 pb-3">your current theme:</p>
+</div>
+<div class=" px-96 flex justify-center">
     <select
         bind:value={current_theme}
         data-choose-theme
