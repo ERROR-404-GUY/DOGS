@@ -3,6 +3,7 @@
 	import "tailwindcss/tailwind.css";
 	import LogOutModal from "$lib/log_out_modal.svelte";
 	import { onMount } from "svelte";
+	import { Toaster } from 'svelte-french-toast'
 	let showModal: () => void;
 
 	let current_theme = "";
@@ -15,8 +16,11 @@
 			}
 		}
 	});
-</script>
 
+
+	
+</script>
+<Toaster />
 <div class="navbar bg-base-100 bg-neutral text-neutral-content">
 	<div class="navbar-start">
 		<a
@@ -33,7 +37,7 @@
 		>
 		<a
 			href="/post-pic"
-			class="btn btn-ghost btn-rounded ease-in-out duration-300 hover:scale-110"
+			class="btn btn-ghost btn-rounded ease-in-out duration-300 hover:scale-110 m-3"
 			>Upload a picture</a
 		>
 		<div class="dropdown dropdown-end">

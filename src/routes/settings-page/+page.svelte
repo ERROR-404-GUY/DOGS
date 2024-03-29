@@ -1,7 +1,7 @@
 <script lang="ts">
     import { themes } from "$lib/index.js";
     import { onMount } from "svelte";
-
+    
     let current_theme = "";
 
     onMount(() => {
@@ -35,7 +35,7 @@
     <h1 class="text-5xl">Settings</h1>
 </div>
 <div class="flex justify-center">
-<p class="text-2xl pt-10 pb-3">your current theme:</p>
+<p class="text-2xl pt-10 pb-3">Your current theme:</p>
 </div>
 <div class=" px-96 flex justify-center">
     <select
